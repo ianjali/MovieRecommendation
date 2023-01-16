@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/style.css">
+    <script>
+    .search{
+    text-align: center;
+    display: flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 50px;
+    background: #999FF0;
+    }
+
+    </script>
+</head>
+
+<body>
+
+    <form class="row search"  action="templates/recommend.html">
+        <div class="input-group col-lg-3">
+            <input name="movie_name" type="text" class="form-control rounded" placeholder="Movie" aria-label="Search" aria-describedby="search-addon" />
+            <button type="submit" class="btn btn-outline-primary">search</button>
+        </div>
+    </form>
+    {% block content %}
+    {% endblock content %}
+
+</body>
+</html>

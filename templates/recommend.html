@@ -1,0 +1,48 @@
+
+{% extends "base.html" %}
+{% block content %}
+    <div class="list">
+        <h1>You might also be interested in :</h1>
+    </div>
+<table id="data" class="table table-striped">
+<thead>
+<th>
+Similar List</th>
+</thead>
+    <tbody>
+
+    {% for movie in movie_list %}
+       <tr>
+        <td>{{ movie }}</td>
+           </tr>
+    {% endfor %}
+
+    </tbody>
+</table>
+
+{% endblock content %}
+
+ <!-- {% for table in tables %}
+                {{titles[loop.index]}}
+                {{ table|safe }}
+    {% endfor %}
+ <table id="data" class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Address</th>
+      </tr>
+    </thead>
+    <tbody>
+
+         <tr>
+          <td>{{ movie }}</td>
+          <td>{{ movie }}</td>
+          <td>{{ movie }}</td>
+
+        </tr>
+      {% for user in users %}
+     {% endfor %}
+    </tbody>
+  </table>-->
